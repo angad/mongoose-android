@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/cmd" android:layout_width="wrap_content" android:text="mongoose" android:layout_height="wrap_content" android:layout_above="@+id/logs" android:layout_alignLeft="@+id/logs"></EditText>
+        <Button android:id="@+id/start" android:text="Start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/cmd" android:layout_alignTop="@+id/cmd" android:layout_alignBottom="@+id/cmd"></Button>
+        <Button android:id="@+id/stop" android:text="Stop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/start" android:layout_alignTop="@+id/start" android:layout_alignBottom="@+id/start"></Button>
+    </RelativeLayout>
+    <TextView android:id="@+id/logs" android:layout_width="match_parent" android:layout_height="match_parent" android:text="logs"></TextView>
+</LinearLayout>
